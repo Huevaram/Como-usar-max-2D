@@ -1,0 +1,142 @@
+!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Max 2D</title>
+</head>
+<body>
+    <style type="text/css">
+    div{
+;
+font-family: 'Arial Black';
+color: #0000CD;
+font-size: 25px;
+  }
+ 
+.div-1{
+background-color: #E9967A;
+text-align: center; 
+    } 
+</style>
+  <div class="div-1">
+     Max 2D
+  </div>
+  <h3><strong>
+   Indice   
+  </strong>
+   </h3>
+<ul>
+<li>Que es Max 2D</li>
+<li>Como poner una plataforma</li>
+<li>Como poner un personaje</li>
+<li>Como hacer que se mueva el personaje</li>
+</ul>
+
+<h3 style="color: #0000CD">
+    Que es max 2D
+</h3>
+     
+     <p class="parrafo-1">
+         Todo lo que necesitas para llevar tu idea desde el concepto hasta el juego terminado. ¡Max2D Game Engine es el entorno de desarrollo de juegos 2D definitivo para dispositivos móviles!.
+         Con esta aplicación vas a poder crear videojuegos sin la necesidad de saber programar es rapido y facil de entender aparte de que ya viene incluido con algunos controles para hacer la programación de un videojuego muy facil.
+     </p>
+     <style type="text/css">
+    div{
+padding: 20px;
+font-family: 'Arial Black';
+font-size: 25px;
+  }
+ 
+.parrafo-1{
+
+text-align: left; 
+    } 
+</style> 
+
+<img src="Max 2D.jpg" class="imagen">
+  
+  <style type="text/css">
+    .imagen{
+      width: 350px;
+      height: 100px;
+      }
+  </style>  
+  <br>
+  <br> 
+  
+  <h3 style="color: #0000CD">
+    Como poner una plataforma
+</h3>
+<p>
+ Primero debes elegir la plataforma que desean, luego con el cubo que esta arriba.   
+</p>
+<img src="Sprite.jpg" class="imagen-2">
+<style type="text/css">
+    .imagen-2{
+      width: 350px;
+      height: 100px;
+      }
+  </style>  
+  <p>
+  Luego le damos a sprite y seleccionamos la carpeta para poder elegir nuestra plataforma.<br>
+Cuando hallamos seleccionado nuestra plataforma, le damos click  a  los botones del lado derecho iniciando por el de abajo, una ves que hemos hecho esto nos aparecera un menu y vamos a poner en transform para ajustar el tamaño y despues vamos a seleccionar +add component y seleccionamos rigid body, le damos a body type y le ponemos static,
+  seleccionamos ahora box colider y lo ajustamos hasta que este de acuerdo a la plataforma y listo.
+  </p>
+
+<h3 style="color: #0000CD">
+   Como poner un personaje
+</h3>
+<p>
+ Para poner un personaje es lo mismo que la plataforma le damos a sprite y seleccionamos la carpeta para poder elegir nuestro personaje.<br>
+ Le damos click  a  los botones del lado derecho iniciando por el de abajo, una ves que hemos hecho esto nos aparecera un menu y vamos a poner en transform para ajustar el tamaño y despues vamos a seleccionar +add component y seleccionamos rigid body, le damos a body type y le ponemos static,
+  seleccionamos ahora box colider y lo ajustamos hasta que este de acuerdo al personaje y listo. 
+</p>
+<img src="Personaje.jpg" class="imagen-3">
+
+<style type="text/css">
+    .imagen-3{
+      width: 350px;
+      height: 100px;
+      }
+      </style>
+      <h3 style="color: #0000CD">
+      Como hacer que se mueva el perdonaje.   
+      </h3>
+      <p>
+ Ahora vamos a ver como hacer que se mueva el personaje.<br>
+ Primero seleccionamos a nuestro personaje, Ahora le vamos a dar al boton de arriba para seleccionar Ui Components y le damos a joystick despues nos vamos a global variable y seleccionamos number,
+ le cambiamos el nombre y en donde dice show debug le ponemos true, luego le damos al script del personaje y seleccionamos <strong>On-joystick y set-velocity </strong>y lo unimos y ponemos en Event:<em><strong>direction change</strong></em> y en variable: <em><strong>joystick</strong></em>,
+ en donde dice <strong>linear-X</strong> pon <em><strong>Expression_solver</strong></em> y escribes lo siguiente <strong>(joystick_value_x * joystick_distance * deltatime * 30000)</strong></p>
+ <img src="Script .jpg" class="imagen-4">
+ <style type="text/css">
+    .imagen-4{
+      width: 350px;
+      height: 100px;
+      }
+      </style>
+      
+      <br><br>
+     <div class="div-2">
+    Pasa a mi canal <a href="https://m.youtube.com/channel/UCDYjlDW2O2DOwmTN_wxj65w">click me</a>
+     </div> 
+     
+   <style type="text/css">  
+       .div-2{
+background-color: #E9967A;
+text-align: left; 
+    } 
+</style>
+
+<p id="texto">
+  ..............             
+</p>
+  <button onclick="texto.innerText='Mas actualizaciónes pronto'">
+      <strong>
+          *Aviso*
+      </strong>
+  </button>
+  <script>
+      var texto = document.getElementById("texto")
+  </script>
+</body>
+</html>
